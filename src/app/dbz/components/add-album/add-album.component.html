@@ -1,0 +1,10 @@
+<form class="row" (ngSubmit)="emitAlbum()">
+    <input 
+    type="text"
+    [(ngModel)]="album.name"   
+    name="name" 
+    class="form control mb-2"  
+    placeholder="Nombre del album">
+    <input type="text" [(ngModel)]="album.author" name="author" class="form control mb-2" placeholder="Artista">
+    <button type="submit" class="btn btn-primary">Agregar album</button>
+</form>

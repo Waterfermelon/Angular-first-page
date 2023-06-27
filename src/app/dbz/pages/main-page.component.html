@@ -1,0 +1,17 @@
+<h1>Albums</h1>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h4>Albums</h4>
+            <dbz-list [albumList]="albums" (onDeleteId)="onDeleteAlbum($event)"></dbz-list>
+            
+
+        </div>
+        <div class="col">
+            <h4>Agregar Album</h4>
+            <dbz-add-album (onNewAlbum)="onNewAlbum($event)"></dbz-add-album>
+        </div>
+    </div>
+
+</div>
